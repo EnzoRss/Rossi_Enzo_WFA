@@ -52,8 +52,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mob.cs" />
+    <Compile Include="PLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +92,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip1_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip1_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip1_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip1_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip2_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip2_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip2_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip2_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip3_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip3_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip3_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip3_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ufoBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ufoGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ufoRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ufoYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_space_invader.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

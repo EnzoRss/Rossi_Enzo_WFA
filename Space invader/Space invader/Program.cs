@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Space_invader
 {
-    internal static class Program
+    internal static class Program  
     {
         /// <summary>
         /// Point d'entrée principal de l'application.
@@ -14,9 +14,13 @@ namespace Space_invader
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            PLayer player = new PLayer();
+            //Show first form and start the message loop
+            (new Form1(player)).Show();
+            Application.Run(); // needed, otherwise app closes immediately
         }
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Space_invader
 {
-    internal class Mob
+    public class Mob
     {
+        public int HP { get; set; }
+
+
+        public Mob() { }
     }
 }
