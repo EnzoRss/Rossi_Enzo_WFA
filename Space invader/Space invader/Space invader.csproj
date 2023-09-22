@@ -58,10 +58,8 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mob.cs" />
-    <Compile Include="PLayer.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Invaders.cs" />
+    <Compile Include="PLayer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -146,6 +144,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo_space_invader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlack1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlack2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlack3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlack4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlack5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlue3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlue4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlue5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyGreen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyGreen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyGreen3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyGreen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyGreen5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyRed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyRed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyRed3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyRed4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyRed5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laserBlue01.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

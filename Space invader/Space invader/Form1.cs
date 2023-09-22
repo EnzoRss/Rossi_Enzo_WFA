@@ -26,7 +26,7 @@ namespace Space_invader
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            (new Form2(play)).Show();
+            (new Form2(play)).ShowDialog();
         }
         private void MainGameTImer(object sender, EventArgs e)
         {
@@ -83,6 +83,11 @@ namespace Space_invader
         }
 
         private void radioBtn_blue_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioBtnOrange_CheckedChanged(object sender, EventArgs e)
         {
 
         }

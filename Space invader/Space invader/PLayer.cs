@@ -7,20 +7,21 @@ using System.Windows.Forms;
 
 namespace Space_invader
 {
-    public class PLayer : Form
+    public class PLayer 
     {
         public int hp { get; set; }
-        public int point { get; set; }
+        public int score { get; set; }
         public int lvl { get; set; }
-        public string name { get; set; }
+        public int speed;
         public PictureBox spaceship { get; set; } = new PictureBox();
         
         public PLayer ()
         {
-            
             hp = 100;
-            point = 0;
+            score = 0;
             lvl = 1;
+            speed = 25;
+
         }
     }
 }
