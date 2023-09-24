@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -10,13 +12,15 @@ namespace Space_invader
 {
     public partial class Form2 : Form
     {
+       
 
-        PLayer play;
+        Player play;
         bool goLeft, goRight, goUp, goDown;
         bool shooting ,isGameOver;
         int enemyBulletTimer, enemySpeed;
-        Invaders[] invaders = new Invaders[15] ;   
-        public Form2(PLayer player)
+        bool enemyGoLeft, enemyGoRight;
+        Invaders[] invaders;   
+        public Form2(Player player)
         {
             InitializeComponent();
             play = player;
@@ -31,8 +35,15 @@ namespace Space_invader
             enemyBulletTimer = 300;
             enemySpeed = 5;
             shooting = false;
+            enemyGoLeft = true;
+            enemyGoRight = false;
             makeInvaders();
             GameTimer.Start();
+        }
+
+        private void checkBorder(PictureBox x)
+        {
+            
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -47,31 +58,57 @@ namespace Space_invader
 
         private void GameTimerEvent(object sender, EventArgs e)
         {
+           
             txtScore.Text = "Score: " + play.score;
             if (goLeft)
             {
-                SpaceShip.Left -= play.speed;
+                SpaceShip.Left -=40;
             }
             if (goRight)
             {
-                SpaceShip.Left += play.speed;
+                SpaceShip.Left += 40;
             }
             enemyBulletTimer -= 10;
             if (enemyBulletTimer < 1)
             {
                 enemyBulletTimer = 300;
-                makeBullet("sadBullet");
+                //makeBullet("sadBullet");
             }
+            int i  = 0 ;
+            if (invaders[invaders.Length -1].PictureBox.Left > 1820 )
+            {
+                invaders = invaders.Select(obj => { obj.PictureBox.Top = obj.PictureBox.Top + 70; return obj; }).ToArray();
+                enemyGoRight = true;
+                enemyGoLeft = false;
+            } 
+            if (invaders[0].PictureBox.Left < 0)
+            {
+                invaders = invaders.Select(obj => { obj.PictureBox.Top = obj.PictureBox.Top + 70; return obj; }).ToArray();
+                enemyGoRight = false;
+                enemyGoLeft = true;
+            }
+
+
             foreach (Control x in this.Controls)
             {
+              Console.WriteLine("i  = "  + i);
                 if (x is PictureBox && (string)x.Tag == "sadInvaders")
                 {
-                    x.Left += enemySpeed;
-                    if (x.Left > 1990)
+                    if (enemyGoLeft)
                     {
-                        x.Top += 65;
-                        x.Left = -80;
+                        x.Left += enemySpeed;
                     }
+                    if (enemyGoRight)
+                    {
+                        x.Left -= enemySpeed;
+                    }
+                    
+                    /* x.Left += enemySpeed;
+                     if (x.Left > 1990)
+                     {
+                         x.Top += 65;
+                         x.Left = -80;
+                     }*/
                     if (x.Bounds.IntersectsWith(SpaceShip.Bounds))
                     {
                         gameOver("You've been invaded by the sad invaders, you are now sad!");
@@ -89,29 +126,32 @@ namespace Space_invader
                             }
                         }
                     }
-                }
-                if (x is PictureBox && (string)x.Tag == "bullet")
+                }else
                 {
-                    x.Top -= 40;
-                   /* if (x.Top < 15)
-                    { 
-                        this.Controls.Remove(x);
-                        shooting = false;
-                    }*/
-                }
-                if (x is PictureBox && (string)x.Tag == "sadBullet")
-                {
-                    x.Top += 40;
-                    /*if (x.Top > 1100)
+                    if (x is PictureBox && (string)x.Tag == "bullet")
                     {
-                        this.Controls.Remove(x);
+                        x.Top -= 40;
+                        if (x.Top < 15)
+                        {
+                            this.Controls.Remove(x);
+                            shooting = false;
+                        }
                     }
-                    if (x.Bounds.IntersectsWith(SpaceShip.Bounds))
+                    if (x is PictureBox && (string)x.Tag == "sadBullet")
                     {
-                        this.Controls.Remove(x);
-                        gameOver("You've been killed by the sad bullet. Now you are sad forever!");
-                    }*/
+                        x.Top += 40;
+                        if (x.Top > 1100)
+                        {
+                            this.Controls.Remove(x);
+                        }
+                        if (x.Bounds.IntersectsWith(SpaceShip.Bounds))
+                        {
+                            this.Controls.Remove(x);
+                            gameOver("You've been killed by the sad bullet. Now you are sad forever!");
+                        }
+                    }
                 }
+              
             }
             if (play.score > 8)
             {
@@ -121,6 +161,7 @@ namespace Space_invader
             {
                 gameOver("Woohoo Happiness Found, Keep it safe!");
             }
+           
         }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
@@ -141,6 +182,11 @@ namespace Space_invader
             {
                 goDown = true;
             }
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
 
         }
 
@@ -214,25 +260,40 @@ namespace Space_invader
                 bullet.Top = -100;
             }
             this.Controls.Add(bullet);
-            bullet.Show();
+            bullet.BringToFront();
         }
 
         private void makeInvaders()
         {
-            invaders = new Invaders[10];
+            invaders = new Invaders[30];
             int left = 0;
-            for (int i = 0; i < invaders.Length; i++)
+            for (int i = 0; i < invaders.Length/2; i++)
             {
                 invaders[i] = new Invaders();
                 invaders[i].PictureBox.Size = new Size(100, 80);
                 invaders[i].PictureBox.Image = Properties.Resources.enemyBlue1;
-                invaders[i].PictureBox.Top = 100;
+                invaders[i].PictureBox.Top = 10;
                 invaders[i].PictureBox.Tag = "sadInvaders";
                 invaders[i].PictureBox.Left = left;
                 invaders[i].PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 invaders[i].speed = enemySpeed;
                 this.Controls.Add(invaders[i].PictureBox);
-                left = left - 150;
+                left = left + 110;
+            }
+            left = 0;
+            for (int i = invaders.Length / 2; i < invaders.Length; i++)
+            {
+                invaders[i] = new Invaders();
+                invaders[i].PictureBox.Size = new Size(100, 80);
+                invaders[i].PictureBox.Image = Properties.Resources.enemyBlue1;
+                invaders[i].PictureBox.Top = 90;
+                invaders[i].PictureBox.Tag = "sadInvaders";
+                invaders[i].PictureBox.Name = i.ToString();
+                invaders[i].PictureBox.Left = left;
+                invaders[i].PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                invaders[i].speed = enemySpeed;
+                this.Controls.Add(invaders[i].PictureBox);
+                left = left + 110;
             }
         }
     }

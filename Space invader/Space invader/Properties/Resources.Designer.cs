@@ -423,6 +423,16 @@ namespace Space_invader.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Space_Background {
+            get {
+                object obj = ResourceManager.GetObject("Space Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ufoBlue {
             get {
                 object obj = ResourceManager.GetObject("ufoBlue", resourceCulture);

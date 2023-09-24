@@ -15,8 +15,8 @@ namespace Space_invader
 
 
         bool isCheked;
-        PLayer play;
-        public Form1(PLayer player)
+        Player play;
+        public Form1(Player player)
         {
             InitializeComponent();
             play = player;
@@ -26,7 +26,9 @@ namespace Space_invader
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            (new Form2(play)).ShowDialog();
+            
+            (new Form2(play)).Show();
+             
         }
         private void MainGameTImer(object sender, EventArgs e)
         {

@@ -17,7 +17,7 @@ namespace Space_invader
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            PLayer player = new PLayer();
+            Player player = new Player();
             //Show first form and start the message loop
             (new Form1(player)).Show();
             Application.Run(); // needed, otherwise app closes immediately

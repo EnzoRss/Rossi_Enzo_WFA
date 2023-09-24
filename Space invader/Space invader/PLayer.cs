@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Space_invader
 {
-    public class PLayer 
+    public class Player 
     {
         public int hp { get; set; }
         public int score { get; set; }
@@ -15,7 +15,7 @@ namespace Space_invader
         public int speed;
         public PictureBox spaceship { get; set; } = new PictureBox();
         
-        public PLayer ()
+        public Player ()
         {
             hp = 100;
             score = 0;
