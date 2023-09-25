@@ -149,7 +149,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Space_invader.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(1904, 929);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.radioBtnBlue);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.radioBtnGreen);

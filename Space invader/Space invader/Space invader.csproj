@@ -211,5 +211,8 @@
   <ItemGroup>
     <None Include="Resources\Space Background.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space-invaders-game-background.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

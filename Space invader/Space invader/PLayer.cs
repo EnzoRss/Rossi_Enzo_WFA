@@ -12,7 +12,8 @@ namespace Space_invader
         public int hp { get; set; }
         public int score { get; set; }
         public int lvl { get; set; }
-        public int speed;
+        public int speed { get; set; }
+        public int damage { get; set; }
         public PictureBox spaceship { get; set; } = new PictureBox();
         
         public Player ()
@@ -20,7 +21,8 @@ namespace Space_invader
             hp = 100;
             score = 0;
             lvl = 1;
-            speed = 25;
+            speed = 10;
+            damage = 25;
 
         }
     }

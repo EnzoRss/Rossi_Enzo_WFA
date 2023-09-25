@@ -50,7 +50,7 @@
             this.txtScore.AutoSize = true;
             this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtScore.ForeColor = System.Drawing.Color.White;
-            this.txtScore.Location = new System.Drawing.Point(21, 982);
+            this.txtScore.Location = new System.Drawing.Point(21, 980);
             this.txtScore.MinimumSize = new System.Drawing.Size(90, 50);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(90, 50);
@@ -69,12 +69,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::Space_invader.Properties.Resources.space_invaders_game_background;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.SpaceShip);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.MinimumSize = new System.Drawing.Size(1055, 603);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form2_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
