@@ -139,14 +139,17 @@
   <data name="ufoRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ufoRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="enemyBlue3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemyBlue3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="enemyBlack5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enemyBlack5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="enemyGreen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enemyGreen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="enemyGreen4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\enemyGreen4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Space Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Space Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ufoYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ufoYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,9 +166,6 @@
   <data name="playerShip3_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playerShip3_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Space Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Space Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="enemyBlue4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enemyBlue4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,17 +178,32 @@
   <data name="playerShip1_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playerShip1_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="min_health_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\min_health_bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="enemyBlue1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enemyBlue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="enemyRed3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\enemyRed3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="space-invaders-game-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\space-invaders-game-background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="laserBlue01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laserBlue01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ufoGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ufoGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="enemyBlack1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enemyBlack1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyRed3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemyRed3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="full_health_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\full_health_bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mid_health_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mid_health_bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="playerShip2_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playerShip2_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,11 +214,8 @@
   <data name="ufoBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ufoBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="enemyBlue3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\enemyBlue3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="playerShip1_blue1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playerShip1_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="enemyGreen4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemyGreen4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="playerShip2_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playerShip2_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,8 +229,8 @@
   <data name="enemyBlack3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enemyBlack3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="laserBlue01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\laserBlue01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="playerShip1_blue1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playerShip1_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo_space_invader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_space_invader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,6 +244,9 @@
   <data name="enemyRed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enemyRed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="metal-frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\metal-frame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="playerShip2_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playerShip2_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,7 +256,7 @@
   <data name="playerShip3_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playerShip3_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="space-invaders-game-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\space-invaders-game-background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="metal-frame(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\metal-frame(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

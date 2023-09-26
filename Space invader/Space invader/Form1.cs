@@ -20,16 +20,11 @@ namespace Space_invader
         {
             InitializeComponent();
             play = player;
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
-
-
-        }
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
             
-            (new Form2(play)).Show();
-             
+
+
         }
+       
         private void MainGameTImer(object sender, EventArgs e)
         {
 
@@ -40,12 +35,12 @@ namespace Space_invader
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void radioBtnModel2_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        private void radioBtnModel4_CheckedChanged(object sender, EventArgs e)
         {
 
         }
@@ -54,42 +49,81 @@ namespace Space_invader
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (radioBtnBlue.Checked)
+            if (radioBtnModel1.Checked)
             {
-                play.spaceship.Image = Properties.Resources.playerShip1_blue ;
+                play.spaceship.Image = radioBtnModel1.Image;
                 isCheked = true;
             }
-            if (radioBtnGreen.Checked)
+            if (radioBtnModel2.Checked)
             {
-                play.spaceship.Image = Properties.Resources.playerShip1_green;
+                play.spaceship.Image = radioBtnModel2.Image;
                 isCheked = true;
             }
-            if (radioBtnRed.Checked)
+            if (radioBtnModel4.Checked)
             {
-                play.spaceship.Image = Properties.Resources.playerShip1_red;
+                play.spaceship.Image = radioBtnModel4.Image; ;
                 isCheked = true;
             }
-            if (radioBtnOrange.Checked)
+            if (radioBtnModel3.Checked)
             {
-                play.spaceship.Image = Properties.Resources.playerShip1_orange;
+                play.spaceship.Image = radioBtnModel3.Image; ;
                 isCheked = true;
             }
 
             if (isCheked)
             {
                this.Close();
+               (new Form2(play)).Show();
             }
                 
             
 
         }
 
-        private void radioBtn_blue_CheckedChanged(object sender, EventArgs e)
+        private void radioBtnModel1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
+        private void radioBtnModel3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void radioBtnBlue_CheckedChanged(object sender, EventArgs e)
+        {
+            radioBtnModel1.Image = Properties.Resources.playerShip1_blue ;
+            radioBtnModel2.Image = Properties.Resources.playerShip2_blue ;
+            radioBtnModel3.Image = Properties.Resources.playerShip3_blue ;
+            radioBtnModel4.Image = Properties.Resources.ufoBlue;
+        }
+
+        private void radioBtnRed_CheckedChanged(object sender, EventArgs e)
+        {
+            radioBtnModel1.Image = Properties.Resources.playerShip1_red;
+            radioBtnModel2.Image = Properties.Resources.playerShip2_red;
+            radioBtnModel3.Image = Properties.Resources.playerShip3_red;
+            radioBtnModel4.Image = Properties.Resources.ufoRed;
+
+        }
+        private void radioBtnGreen_CheckedChanged(object sender, EventArgs e)
+        {
+            radioBtnModel1.Image = Properties.Resources.playerShip1_green;
+            radioBtnModel2.Image = Properties.Resources.playerShip2_green;
+            radioBtnModel3.Image = Properties.Resources.playerShip3_green;
+            radioBtnModel4.Image = Properties.Resources.ufoGreen;
+
+        }
         private void radioBtnOrange_CheckedChanged(object sender, EventArgs e)
+        {
+            radioBtnModel1.Image = Properties.Resources.playerShip1_orange;
+            radioBtnModel2.Image = Properties.Resources.playerShip2_orange;
+            radioBtnModel3.Image = Properties.Resources.playerShip3_orange;
+            radioBtnModel4.Image = Properties.Resources.ufoYellow;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

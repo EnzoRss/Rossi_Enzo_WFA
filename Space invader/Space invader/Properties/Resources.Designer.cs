@@ -273,6 +273,16 @@ namespace Space_invader.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap full_health_bar {
+            get {
+                object obj = ResourceManager.GetObject("full_health_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap laserBlue01 {
             get {
                 object obj = ResourceManager.GetObject("laserBlue01", resourceCulture);
@@ -286,6 +296,46 @@ namespace Space_invader.Properties {
         internal static System.Drawing.Bitmap logo_space_invader {
             get {
                 object obj = ResourceManager.GetObject("logo_space_invader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap metal_frame {
+            get {
+                object obj = ResourceManager.GetObject("metal-frame", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap metal_frame_1_ {
+            get {
+                object obj = ResourceManager.GetObject("metal-frame(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mid_health_bar {
+            get {
+                object obj = ResourceManager.GetObject("mid_health_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap min_health_bar {
+            get {
+                object obj = ResourceManager.GetObject("min_health_bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

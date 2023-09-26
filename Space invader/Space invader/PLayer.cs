@@ -18,11 +18,11 @@ namespace Space_invader
         
         public Player ()
         {
-            hp = 100;
+            hp = 75;
             score = 0;
             lvl = 1;
             speed = 10;
-            damage = 25;
+            damage = 75;
 
         }
     }

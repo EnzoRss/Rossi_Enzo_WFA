@@ -214,5 +214,20 @@
   <ItemGroup>
     <None Include="Resources\space-invaders-game-background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_health_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mid_health_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full_health_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metal-frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metal-frame%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

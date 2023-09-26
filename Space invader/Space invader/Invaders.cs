@@ -17,7 +17,7 @@ namespace Space_invader
 
         public Invaders() 
         {
-            HP = 50;
+            HP = 100;
             damage = 50;
             speed = 0;
             PictureBox = new PictureBox();

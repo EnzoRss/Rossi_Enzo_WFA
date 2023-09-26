@@ -29,21 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.SpaceShip = new System.Windows.Forms.PictureBox();
             this.txtScore = new System.Windows.Forms.Label();
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
+            this.healthBarImage = new System.Windows.Forms.PictureBox();
+            this.SpaceShip = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.healthBarImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpaceShip)).BeginInit();
             this.SuspendLayout();
-            // 
-            // SpaceShip
-            // 
-            this.SpaceShip.BackColor = System.Drawing.Color.Transparent;
-            this.SpaceShip.Location = new System.Drawing.Point(900, 900);
-            this.SpaceShip.Name = "SpaceShip";
-            this.SpaceShip.Size = new System.Drawing.Size(170, 110);
-            this.SpaceShip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SpaceShip.TabIndex = 0;
-            this.SpaceShip.TabStop = false;
             // 
             // txtScore
             // 
@@ -64,13 +56,33 @@
             this.GameTimer.Interval = 20;
             this.GameTimer.Tick += new System.EventHandler(this.GameTimerEvent);
             // 
+            // healthBarImage
+            // 
+            this.healthBarImage.Image = global::Space_invader.Properties.Resources.full_health_bar;
+            this.healthBarImage.Location = new System.Drawing.Point(1540, 925);
+            this.healthBarImage.Name = "healthBarImage";
+            this.healthBarImage.Size = new System.Drawing.Size(343, 85);
+            this.healthBarImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.healthBarImage.TabIndex = 2;
+            this.healthBarImage.TabStop = false;
+            // 
+            // SpaceShip
+            // 
+            this.SpaceShip.BackColor = System.Drawing.Color.Transparent;
+            this.SpaceShip.Location = new System.Drawing.Point(869, 880);
+            this.SpaceShip.Name = "SpaceShip";
+            this.SpaceShip.Size = new System.Drawing.Size(140, 140);
+            this.SpaceShip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SpaceShip.TabIndex = 0;
+            this.SpaceShip.TabStop = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::Space_invader.Properties.Resources.space_invaders_game_background;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.healthBarImage);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.SpaceShip);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
@@ -80,6 +92,7 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
+            ((System.ComponentModel.ISupportInitialize)(this.healthBarImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpaceShip)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -91,5 +104,6 @@
         private System.Windows.Forms.PictureBox SpaceShip;
         private System.Windows.Forms.Label txtScore;
         private System.Windows.Forms.Timer GameTimer;
+        private System.Windows.Forms.PictureBox healthBarImage;
     }
 }
