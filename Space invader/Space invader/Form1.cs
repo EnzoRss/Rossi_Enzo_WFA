@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,8 @@ namespace Space_invader
     {
 
 
-        bool isCheked;
+        bool isChekedModel;
+        bool isCheckDiff;
         Player play;
         public Form1(Player player)
         {
@@ -25,10 +27,6 @@ namespace Space_invader
 
         }
        
-        private void MainGameTImer(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -52,25 +50,41 @@ namespace Space_invader
             if (radioBtnModel1.Checked)
             {
                 play.spaceship.Image = radioBtnModel1.Image;
-                isCheked = true;
+                isChekedModel = true;
             }
             if (radioBtnModel2.Checked)
             {
                 play.spaceship.Image = radioBtnModel2.Image;
-                isCheked = true;
+                isChekedModel = true;
             }
             if (radioBtnModel4.Checked)
             {
                 play.spaceship.Image = radioBtnModel4.Image; ;
-                isCheked = true;
+                isChekedModel = true;
             }
             if (radioBtnModel3.Checked)
             {
                 play.spaceship.Image = radioBtnModel3.Image; ;
-                isCheked = true;
+                isChekedModel = true;
+            }
+            if (radioBtnFacile.Checked)
+            {
+                play.difficulty = "facile";
+                isCheckDiff = true;
+            }
+            if (radioBtnDiff.Checked)
+            {
+                play.difficulty = "diff";
+                isCheckDiff = true;
+            }
+            if (radioBtnImpo.Checked)
+            {
+                play.difficulty = "impo";
+                isCheckDiff = true;
             }
 
-            if (isCheked)
+            Debug.WriteLine(play.difficulty);
+            if (isChekedModel && isCheckDiff)
             {
                this.Close();
                (new Form2(play)).Show();
@@ -127,5 +141,7 @@ namespace Space_invader
         {
 
         }
+
+        
     }
 }

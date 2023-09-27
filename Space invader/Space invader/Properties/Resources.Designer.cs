@@ -293,6 +293,16 @@ namespace Space_invader.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap laserBlue15 {
+            get {
+                object obj = ResourceManager.GetObject("laserBlue15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_space_invader {
             get {
                 object obj = ResourceManager.GetObject("logo_space_invader", resourceCulture);
@@ -316,6 +326,16 @@ namespace Space_invader.Properties {
         internal static System.Drawing.Bitmap metal_frame_1_ {
             get {
                 object obj = ResourceManager.GetObject("metal-frame(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap metal_frame_1__1_ {
+            get {
+                object obj = ResourceManager.GetObject("metal-frame(1)(1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

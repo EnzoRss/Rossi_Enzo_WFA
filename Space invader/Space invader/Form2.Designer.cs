@@ -42,7 +42,7 @@
             this.txtScore.AutoSize = true;
             this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtScore.ForeColor = System.Drawing.Color.White;
-            this.txtScore.Location = new System.Drawing.Point(21, 980);
+            this.txtScore.Location = new System.Drawing.Point(12, 622);
             this.txtScore.MinimumSize = new System.Drawing.Size(90, 50);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(90, 50);
@@ -59,9 +59,9 @@
             // healthBarImage
             // 
             this.healthBarImage.Image = global::Space_invader.Properties.Resources.full_health_bar;
-            this.healthBarImage.Location = new System.Drawing.Point(1540, 925);
+            this.healthBarImage.Location = new System.Drawing.Point(947, 599);
             this.healthBarImage.Name = "healthBarImage";
-            this.healthBarImage.Size = new System.Drawing.Size(343, 85);
+            this.healthBarImage.Size = new System.Drawing.Size(305, 70);
             this.healthBarImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.healthBarImage.TabIndex = 2;
             this.healthBarImage.TabStop = false;
@@ -69,9 +69,9 @@
             // SpaceShip
             // 
             this.SpaceShip.BackColor = System.Drawing.Color.Transparent;
-            this.SpaceShip.Location = new System.Drawing.Point(869, 880);
+            this.SpaceShip.Location = new System.Drawing.Point(527, 594);
             this.SpaceShip.Name = "SpaceShip";
-            this.SpaceShip.Size = new System.Drawing.Size(140, 140);
+            this.SpaceShip.Size = new System.Drawing.Size(75, 75);
             this.SpaceShip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SpaceShip.TabIndex = 0;
             this.SpaceShip.TabStop = false;
@@ -81,12 +81,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.healthBarImage);
-            this.Controls.Add(this.txtScore);
+            this.BackgroundImage = global::Space_invader.Properties.Resources.background;
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.SpaceShip);
-            this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(1055, 603);
+            this.Controls.Add(this.txtScore);
+            this.Controls.Add(this.healthBarImage);
+            this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form2_Load);
